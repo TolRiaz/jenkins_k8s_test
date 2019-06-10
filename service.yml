@@ -13,7 +13,7 @@ spec:
       #      nodePort: 30025
   selector:
     app: jenkins
-  externalIPs: ["220.149.13.181"]
+  externalIPs: ["220.149.13.191"]
 
 ---
 

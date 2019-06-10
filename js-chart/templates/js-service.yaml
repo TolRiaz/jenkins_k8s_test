@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: jenkins-slave
+  name: jenkins-jnlp
   labels:
-    app.kubernetes.io/managed-by: jenkins-slave
+    app.kubernetes.io/managed-by: jenkins-jnlp
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app.kubernetes.io/name: jenkins-slave
+    app.kubernetes.io/name: jenkins
